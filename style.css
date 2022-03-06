@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap');
+/*font-family: 'IBM Plex Sans', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}   
+
+body {
+    font-size: 100%;    
+    background-repeat: no-repeat;
+    background-size: 110%;
+    animation: animate 24s ease-in-out infinite; 
+      
+        
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-image: url(./lib/Backgrounds/PedradaGavea.svg);
+
+    }
+
+    16.66% {
+        background-image: url(./lib/Backgrounds/AgulhasNegras.svg);
+        
+    }
+
+    33.32% {
+        background-image: url(./lib/Backgrounds/FozdoIguaçu.svg);
+        
+    }
+
+    49.98% {
+        background-image: url(./lib/Backgrounds/PicoParana.svg);
+        
+    }
+
+    66.64% {
+        background-image: url(./lib/Backgrounds/SerraFina.svg);               
+    }
+    
+    83.3% {
+        background-image: url(./lib/Backgrounds/MonteRoraima.svg);               
+    }
+
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 11px;  
+}
+
+.menu-topo {
+    display: flex;
+    gap: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 15px;      
+}
+
+main {
+    border-top: 0.4px solid #ffff;
+    display: flex;
+    padding: 20px;   
+    align-items: top;
+    justify-content: space-between;
+   
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 50px;    
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;    
+    }
+
+.h2-titulos {
+    font-style: normal;
+    font-size: 21px;
+    color: #F7AD19;
+}
+
+.b-baixarapp {
+    background-color: #429EBD;
+    width: 158px;
+    height: 42px;
+    border: 1px solid #FEFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.b-telegram {
+    background-color: transparent;
+    width: 158px;
+    height: 42px;
+    border: 1px solid #FEFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.more-button {
+    background-color: transparent;
+    width: 128px;
+    height: 22px;
+    border: 1px solid #FEFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.nossa-comunidade {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100vh;
+    
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 70vh;
+}
+
+.ball-transition {
+    display: grid;
+    justify-content: flex-end; 
+    grid-template-rows: 200px auto; 
+}
+
+.descricoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;   
+
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.img-redessociais {
+    width: 150px;
+        }
+
+@media screen and (max-width: 1200px){
+
+    .img-redessociais {
+        width: 150px;
+    }
+    
+    h1 {
+     font-size: 40px;   
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    body {
+        background-size: 130%;
+    }
+}
+
+@media screen and (max-width: 1050px)   {
+
+    .img-redessociais {
+        width: 150px;
+            }
+    
+    h1 {
+     font-size: 40px;   
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    body {
+        background-size: 150%;
+    }
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+}
+}
+@media screen and (max-width: 900px) {
+
+   .descricoes {
+       visibility: hidden;
+   }
+
+   .ball-transition {
+       visibility: hidden;    
+   }
+
+  .menu-topo {
+     font-size: 13px;
+ }
+
+  .menu-topo {
+     visibility: hidden;
+ }
+
+ .topo {
+     display: block;
+     position: absolute;
+     margin-left: 200px;
+ }
+
+ .nossa-comunidade {
+     display: block;
+     position: absolute;
+     padding: 100px;
+     margin-left: 100px;
+      }
+
+ .botoes {
+     display: block;
+     padding: 20px;
+     margin-left: 50px;   ;
+ }
+
+ body {
+    background-size: 250%;
+}
+
+.b-telegram {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    margin-left: 290px;
+}
+
+}
